@@ -32,14 +32,12 @@ void main() {
 
     switch (choice) {
       case 1:
-      // Right Triangle
         for (int i = 1; i <= rows; i++) {
           print('* ' * i);
         }
         break;
 
       case 2:
-      // Number Triangle
         for (int i = 1; i <= rows; i++) {
           String line = '';
           for (int j = 1; j <= i; j++) {
@@ -50,14 +48,12 @@ void main() {
         break;
 
       case 3:
-      // Square
         for (int i = 0; i < rows; i++) {
           print('* ' * rows);
         }
         break;
 
       case 4:
-      // Pyramid
         for (int i = 1; i <= rows; i++) {
           String spaces = ' ' * (rows - i);
           String stars = '* ' * i;
@@ -66,7 +62,6 @@ void main() {
         break;
 
       case 5:
-      // Inverted Right Triangle
         for (int i = rows; i >= 1; i--) {
           print('* ' * i);
         }

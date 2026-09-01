@@ -1,9 +1,9 @@
 import 'dart:io';
 double calculateAnnualSalary(double monthlySalary) {
   return monthlySalary * 12; }
-double calculateBonus(double monthlySalary, [double bonusPercentage = 10]) {
+double calculateBonus(double monthlySalary, [double bonusPercentage = 10]) { //bonusPercentage is the optional parameter
   return monthlySalary * bonusPercentage / 100; }
-double calculateTotalSalary({required double annualSalary, double bonus = 0}) {
+double calculateTotalSalary({required double annualSalary, double bonus = 0}) { // annvalSalary and bonous are the required parameter and in this code we dont have a named parameter
   return annualSalary + bonus; }
 void main() {
   stdout.write("Enter Employee Name: ");
